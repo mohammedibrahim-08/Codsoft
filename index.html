@@ -1,303 +1,36 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Mohammed Ibrahim - Portfolio</title>
-  </head>
-  <body>
-    <!--Header section code-->
-    <header class="header">
-      <a href="#home" class="logo">Mohammed Ibrahim</a>
-
-      <i class="bx bx-menu" id="menu-icon"></i>
-
-      <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#testimonial">Testimonial</a>
-        <a href="#project">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
-    <!--Home Section code-->
-
-    <section class="home" id="home">
-      <div class="home-img">
-        <img src="Profile.jpeg" alt="Profile Image" />
-      </div>
-      <div class="home-content">
-        <h3>Hello, Myself</h3>
-        <h1>Mohammed ibrahim</h1>
-        <h3>I'm a <span class="multiple-text"></span></h3>
-        <p>
-          I am a motivated and enthusiastic student with a strong interest in
-          web development. I am currently learning modern web technologies and
-          building projects to improve my practical skills. I enjoy solving
-          problems, exploring new tools, and growing as a developer through
-          hands-on experience.
-        </p>
-        <div class="social-media">
-          <a href="#"><i class="bx bxl-linkedin"></i></a>
-          <a href="#"><i class="bx bxl-github"></i></a>
-          <a href="#"><i class="bx bxl-facebook"></i></a>
-          <a href="#"><i class="bx bxl-whatsapp"></i></a>
-          <a href="#"><i class="bx bxl-instagram"></i></a>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1 class="title">My Basic Calculator</h1>
+<div class="calculator">
+    <input type="text" id="display" readonly>
+    <div class="buttons">
+        <button class="clear" onclick="clearDisplay()">C</button>
+        <button onclick="deleteLast()">&#9003;</button>
+        <button onclick="appendValue('%')">%</button>
+        <button class="operator" onclick="appendValue('/')">÷</button>
+        <button onclick="appendValue('7')">7</button>
+        <button onclick="appendValue('8')">8</button>
+        <button onclick="appendValue('9')">9</button>
+        <button class="operator" onclick="appendValue('*')">×</button>
+        <button onclick="appendValue('4')">4</button>
+        <button onclick="appendValue('5')">5</button>
+        <button onclick="appendValue('6')">6</button>
+        <button class="operator" onclick="appendValue('-')">−</button>
+        <button onclick="appendValue('1')">1</button>
+        <button onclick="appendValue('2')">2</button>
+        <button onclick="appendValue('3')">3</button>
+        <button class="operator" onclick="appendValue('+')">+</button>
+        <button class="zero" onclick="appendValue('0')">0</button>
+        <button onclick="appendValue('.')">.</button>
+        <button class="equal" onclick="calculate()">=</button>
         </div>
-        <a href="CV.pdf" class="btn">Download CV</a>
-
-      </div>
-    </section>
-
-    <!--About Section Code-->
-    
-    <section class="about" id="about">
-      <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <h3>I'am a <span> Bachelor of Computer Applications Student </span></h3>
-        <p>
-          from Department of management science Dr. Babasaheb Ambedkar
-          University Chhatrapati Sambhajinagar (Aurangabad). with a strong
-          interest in web design and front-end development. I enjoy creating
-          clean, responsive, and user-friendly websites using HTML, CSS, and
-          JavaScript. I am continuously learning new web technologies and
-          building projects to improve my skills and start my career as a Web
-          Designer.
-        </p>
-        <p>
-          Along with my technical interests, I am passionate about sports, which
-          helps me stay disciplined, active, and focused. My goal is to grow as
-          a skilled web developer and build a successful career in the IT
-          industry through continuous learning and dedication.
-        </p>
-        <a href="#" class="btn">Read More</a>
-      </div>
-
-      <div class="about-img">
-        <img src="about.jpeg" alt="AboutImage" />
-      </div>
-    </section>
-
-    <!--Skills Section code-->
-
-    <section class="skills" id="skills">
-      <h2 class="heading">My <span>Skills</span></h2>
-      <div class="skills-container">
-        <div class="skills-box">
-          <i class="bx bx-code"></i>
-          <h3>Web development</h3>
-          <p>
-            I am a passionate web development student with a strong foundation
-            in HTML, CSS, and JavaScript, focused on building clean, responsive,
-            and user-friendly websites. I have experience working with Bootstrap
-            for modern UI design, PHP for backend development, and MySQL for
-            database management. I enjoy learning new technologies, creating
-            real-world projects, and continuously improving my skills in
-            full-stack web development to build powerful and scalable
-            applications.
-          </p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-
-        <div class="skills-box">
-          <i class="bx bxl-microsoft"></i>
-          <h3>MS Office</h3>
-          <p>
-            I have practical knowledge of MS Office tools including Microsoft
-            Word, Excel, PowerPoint, and Outlook, which I use regularly for
-            academic and project work. I am comfortable creating well-formatted
-            documents in Word, preparing spreadsheets and basic formulas in
-            Excel, and designing clear and attractive presentations in
-            PowerPoint. These skills help me manage information efficiently,
-            present ideas effectively, and support my daily academic and
-            professional tasks.
-          </p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-
-        <div class="skills-box">
-          <i class="bx bxl-c-plus-plus"></i>
-          <h3>Programming Language</h3>
-          <p>
-            I am building a strong foundation in programming languages that help
-            me understand logic, problem-solving, and software development
-            concepts. I have hands-on experience with languages like C, C++,
-            Java, Python, and JavaScript, which has helped me improve my
-            analytical thinking and coding skills. I also work with SQL for
-            basic database operations.I am steadily improving my programming
-            abilities and preparing myself for real-world development
-            challenges.
-          </p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-      </div>
-    </section>
-
-    <!--Testimonial Section-->
-
-    <section class="testimonial" id="testimonial">
-      <div class="testimonial-box">
-        <h2 class="heading">Testimonials</h2>
-         
-        <div class="wrapper">
-          <div class="testimonial-item">
-            <img src="01.jpeg" alt="" />
-
-            <h2>Nrupendra Kalani</h2>
-            <div class="rating">
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-            </div>
-            <p>
-              A focused and reliable individual with a positive attitude toward learning and teamwork.
-            </p>
-          </div>
-
-           <div class="wrapper">
-          <div class="testimonial-item">
-            <img src="02.jpeg" alt="" />
-
-            <h2>Mohammed Rehan</h2>
-            <div class="rating">
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-            </div>
-            <p>
-              A motivated and cooperative person who consistently contributes ideas and maintains a strong work ethic.
-            </p>
-          </div>
-          
-
-           <div class="wrapper">
-          <div class="testimonial-item">
-            <img src="03.jpeg" alt="" />
-
-            <h2>Sarthak Sakalkar</h2>
-            <div class="rating">
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-            </div>
-            <p>
-              A supportive and inspiring individual who encourages growth and continuous improvement.
-            </p>
-          </div>
-        
-           <div class="wrapper">
-          <div class="testimonial-item">
-            <img src="04.jpeg" alt="" />
-
-            <h2>Divy Tank</h2>
-            <div class="rating">
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-            </div>
-            <p>
-              A dedicated and enthusiastic individual who shows commitment, adaptability, and a strong willingness to learn.
-            </p>
-          </div>
-
-          <div class="wrapper">
-          <div class="testimonial-item">
-            <img src="05.jpeg" alt="" />
-
-            <h2>Khan Fahad</h2>
-            <div class="rating">
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-            </div>
-            <p>
-              A reliable and hardworking person who always strives for improvement and growth.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Project section code-->
-    <section class="project" id="project">
-      <h2 class="heading">My <span>Projects</span></h2>
-      <div class="project-container">
-        <div class="project-box">
-          <i class='bx  bx-donate-blood'></i> 
-        <h3>Lifestream Blood-Donation & Camp Management System</h3>
-        <p>The Blood Donation and Camp Management System is a web-based application developed to manage blood donors, blood donation camps, blood requests, and blood stock information in an efficient and organized manner. The system provides a centralized platform where administrators, donors, and hospitals can interact easily. It helps reduce manual paperwork, improves data accuracy, and ensures quick access to blood during emergency situations. By digitizing the entire process, the system supports timely communication and better coordination among all stakeholders involved in blood donation activities.
-
-        In this project, modern web technologies are used to build a reliable and user-friendly system. The frontend is developed using HTML, CSS, and JavaScript, providing a clean and responsive user interface. The backend is implemented using PHP, which handles business logic, user authentication, and data processing. The database is managed using MySQL, which securely stores donor details, camp information, blood stock data, and blood requests. The application runs on an Apache server and is developed using Visual Studio 2022 as the primary development environment. Together, these technologies ensure the system is secure, efficient, and suitable for real-time blood donation and camp management.
-        </p>
-       <a href="#" class="btn">Read More</a>
-        </div>
-
-      <div class="project-box">
-        <i class='bx  bx-calculator'></i> 
-       <h3>Calculator App</h3>
-       <br>
-       <p>The Basic Calculator Design App is a simple and user-friendly web application developed to perform basic arithmetic operations such as addition, subtraction, multiplication, and division. The main purpose of this application is to provide quick and accurate calculations through a clean and intuitive interface. The calculator is designed with a modern layout, clear buttons, and a readable display area, making it easy for users of all age groups to perform calculations without confusion.
-
-       This application is built using core web technologies. The structure of the calculator is created using HTML, which defines the display screen and buttons. The design and layout are styled using CSS, including button alignment, colors, hover effects, and responsive design for different screen sizes. The functionality of the calculator is implemented using JavaScript, which handles user input, performs calculations, and displays results instantly. Tools like Visual Studio Code are used for development, and the project can be easily deployed on any web browser. Overall, the Basic Calculator Design App demonstrates fundamental front-end development skills and practical use of HTML, CSS, and JavaScript in building interactive web applications.
-      </p>
-      <a href="#" class="btn">Read More</a>
-      </div>
     </div>
-</section>
-    
-    <!--Contact Section code-->
-
-    <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me</span></h2>
-
-      <form action="#">
-        <div class="input-box">
-          <input type="text" placeholder="Full Name">
-          <input type="email" name="Email" placeholder="Email Address">
-        </div>
-        <div class="input-box">
-          <input type="number" placeholder="Phone Number">
-          <input type="text" placeholder="Email Subject">
-        </div>
-        <textarea name="message" id="" cols="100" row="100" placeholder="Your Message"></textarea>
-        <input type="submit" value="Send Message" class="btn">
-      </form>
-    </section>
-
-    <!--Footer Section Code-->
-
-    <footer class="footer">
-      <div class="social">
-          <a href="#"><i class="bx bxl-linkedin"></i></a>
-          <a href="#"><i class="bx bxl-github"></i></a>
-          <a href="#"><i class="bx bxl-facebook"></i></a>
-          <a href="#"><i class="bx bxl-whatsapp"></i></a>
-          <a href="#"><i class="bx bxl-instagram"></i></a>
-        </div>
-        <p class="copyright">
-           &copy; Mohammed Ibrahim-All Rights Reserved
-      </p>
-    </footer>
-
-
-    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
-    <script src="script.js"></script>
-  </body>
+</div>
+<script src="script.js"></script>
+</body>
 </html>

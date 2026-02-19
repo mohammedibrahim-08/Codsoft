@@ -1,20 +1,21 @@
-let menu = document.querySelector("#menu-icon");
-let navbar = document.querySelector(".navbar");
+let display = document.getElementById("display");
 
-menu.onclick = () => {
-  menu.classList.toggle("bx-x");
-  navbar.classList.toggle("active");
-};
+function appendValue(value) {
+    display.value += value;
+}
 
-window.onscroll = () => {
-  menu.classList.remove("bx-x");
-  navbar.classList.remove("active");
-};
+function clearDisplay() {
+    display.value = "";
+}
 
-const typed = new Typed(".multiple-text", {
-  strings: ["BCA Student", "Footballer", "Frontend Developer", "Web Designer"],
-  typeSpeed: 80,
-  backSpeed: 80,
-  backDelay: 1200,
-  loop: true,
-});
+function deleteLast() {
+    display.value = display.value.slice(0, -1);
+}
+
+function calculate() {
+    try {
+        display.value = eval(display.value);
+    } catch {
+        display.value = "Error";
+    }
+}
